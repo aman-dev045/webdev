@@ -59,6 +59,24 @@
         border: var(--border);
         border-radius: var(--borderradius);
     }
+
+    /*  css media*/
+
+    @media only screen and (orientation:landscape){
+        body{
+            background-color: brown;
+        }
+        nav{
+            color: aqua;
+            background-color: rgb(106, 72, 138);
+            border: 2px solid black;
+        }
+    }
+    @media only screen and (max-width:500px){
+        body{
+            background-color: aquamarine;
+        }
+    }
 </style>
 <body>
     <nav class="blue">home</nav>
