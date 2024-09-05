@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positionsytling</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid black;
+            margin: 2px;
+            padding: 5px;
+            height: 33px;
+            width: 52vw;
+
+        }
+
+        .box1 {
+            background-color: brown;
+            position: absolute;
+            top: 2px;
+        }
+
+        .box2 {
+            background-color: rgb(60, 133, 179);
+            /* position: relative;
+            top: -22px;
+            z-index: 3px; */
+
+        }
+
+        .box3 {
+            background-color: rgb(174, 85, 85);
+            /* position: relative;
+            top: -40px; */
+        }
+
+        .box4 {
+            background-color: rgb(165, 42, 165);
+            position: relative;
+            /* top: -61px;
+            right: 5px;
+            height: 17px; */
+        }
+        .parent{
+            margin: 40px;
+            border: 3px solid brown;
+            height: 60vh;
+            width: 65vh;
+            /* exception:
+            transform ,filter ,or perspective properties can also manke an element appear as positioned 
+            1:transform: translate(0);
+            2:filter:invert(0);
+            3:perspective:0em; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+
+</html>

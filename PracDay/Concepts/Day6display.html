@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            /* display: inline; */
+            /* when we use inline property then we will not be able to change its width  height and we will not be able to change margin and padding at its top */
+            /* to resolve this problem we use inlin block */
+            display: inline-block;
+            margin : 5px;
+            width: 450px;
+        }
+        .box1{
+            /* display: none;
+             */
+             visibility: hidden;
+        }
+        span{
+            border: 2px solid red;
+           margin: 50px;
+           display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">i am a boy</div>
+    <div class="box">also works hard</div>
+    <br>
+    <span>she is nice girl</span>
+    <span>she works hard too</span>
+    
+</body>
+</html>

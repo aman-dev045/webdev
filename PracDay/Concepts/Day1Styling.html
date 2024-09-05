@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="index.css">
+      -->
+    <style>
+        /* div{
+            color: red;
+        } */
+         .red{
+            color: red;
+         }
+         #blue{
+            color: blueviolet;
+         }
+         div p{
+            color: orange;
+            /* if we use div space p then it will perform on any descendent */
+         }
+         /* but if we want to use div.p then it will only perform on direct child */
+         a:visited{
+            color: yellow;
+            /* after  visiting an link */
+         }
+         a:link{
+            color: rgb(137, 10, 10);
+            /* befor visiting the link */
+         }
+         a:active{
+            background-color: rgb(140, 23, 23);
+         }
+         a:hover{
+            background-color: rgb(85, 0, 255);
+         }
+    </style>
+</head>
+<body>
+   <div class="red">
+    it is my day
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum iste delectus repellendus ad atque est dolor reiciendis accusantium officiis quam, placeat nemo assumenda perspiciatis omnis non cupiditate ducimus, tempora ipsum!</p>
+   </div>
+   <div id="blue">it is your day to
+    <article>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ab quo architecto est, saepe dolorum veniam sequi sapiente quos labore distinctio iste omnis cum illo incidunt ex maxime tenetur suscipit.</p>
+    </article>
+   </div>
+   <a href="https://google.com">Go to google</a>
+   <a href="https://facebook.com">Go to facebook</a>
+
+</body>
+</html>
