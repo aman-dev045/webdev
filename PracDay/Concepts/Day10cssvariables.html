@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css variables</title>
+    
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    :root{
+
+/* this vairable is called global variable */
+
+        --color:rgba(167, 233, 104, 0.886);
+        /* this is varible inside root */
+        --deccolor:rgb(237, 189, 100);
+        --defopacity:1px;
+        --cutpad:100px;
+        --border:2px solid black;
+    }
+
+    nav{
+        --borderradius:5px;
+
+        /* local varible this can override the global variable if it style inline */
+
+        display: inline-block;
+        margin: 5px;
+        padding: var(--cutpad);
+        color: var(--deccolor);
+
+        /* assigining the value of root to the fun var */
+
+        background-color: var(--color);
+        opacity: var(--defopacity);
+        border: var(--border);
+        border-radius: var(--borderradius);
+        
+    }
+    .blue{
+        --borderradius:50px;
+        --color:orange;
+
+        /* local varible this can override the global variable if it style inline */
+
+        display: inline-block;
+        margin: 5px;
+        padding: var(--cutpad);
+        color: var(--deccolor);
+
+        /* assigining the value of root to the fun var */
+
+        background-color: var(--color);
+        opacity: var(--defopacity);
+        border: var(--border);
+        border-radius: var(--borderradius);
+    }
+</style>
+<body>
+    <nav class="blue">home</nav>
+    <nav>about</nav>
+    <nav>contact</nav>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, fuga. Quam odit facere nesciunt doloribus veniam numquam alias, beatae similique totam ipsa perspiciatis sunt reiciendis quae ratione laborum sapiente maiores culpa nam distinctio. Amet aspernatur voluptas consequuntur, error recusandae vero nostrum veritatis natus corrupti voluptate libero doloremque, laudantium ratione sint.</div>
+</body>
+</html>
