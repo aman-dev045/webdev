@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> floatandclear</title>
+</head>
+<style>
+    .paren{
+        display: flow-root;
+        /* it will adjust the leaked content it does in image */
+        border: 2px solid black;
+    }
+   img{
+    float: left;
+    /* this will ensure that content will float in its left of the parent  */
+   }
+   .c{
+    clear: both;
+    /* it won't allow to float content in its range */
+   }
+
+</style>
+<body><div class="paren">
+    <div class="class1 class">
+        <img src="https://images.pexels.com/photos/3979134/pexels-photo-3979134.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+    </div>
+    <div class="class1 class">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto fuga animi enim consectetur, id nostrum iste quos quae obcaecati sapiente esse eos quo ducimus excepturi a recusandae dolor optio blanditiis.</div>
+    <div class="class1 class c">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque totam qui voluptatem doloribus in numquam quod, explicabo sapiente praesentium maiores, incidunt aliquid, eius veritatis excepturi dicta vero. Laboriosam similique odit repellendus fuga porro, commodi necessitatibus maiores nostrum ad nemo beatae, nisi quo! Nam velit molestias distinctio aspernatur, eum inventore quia voluptatibus vel repellat natus atque hic consequuntur deserunt fugit, corrupti, corporis nisi sint odit id fugiat nemo doloremque sit temporibus. Cumque aspernatur at, id laudantium eveniet tempore, quasi corporis magnam officiis debitis laborum reprehenderit impedit nulla officia ab minima doloribus consectetur delectus atque saepe accusantium soluta iure. Incidunt, dolores sint exercitationem asperiores cupiditate omnis deserunt dolor sit itaque qui quos consequuntur, aut tenetur! Doloribus blanditiis facilis voluptate dolore, obcaecati reiciendis, repellat inventore in veritatis quidem, voluptatem illo at. Voluptate in aperiam non, consequuntur maiores dolor rerum sed illo. Odit aperiam asperiores totam similique quasi? Doloremque placeat libero atque cumque ad iure, maxime laudantium animi numquam labore enim aliquam hic laborum voluptates ipsum porro recusandae quidem harum similique amet doloribus nemo quam voluptatem? Inventore iste, dolorum illum similique cum, tempore tenetur corporis consectetur earum aliquid nemo reprehenderit nobis temporibus quod aperiam illo blanditiis provident ad totam voluptas beatae laborum laboriosam officiis?</div>
+</div>
+</body>
+</html>
