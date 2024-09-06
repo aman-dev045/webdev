@@ -25,6 +25,7 @@
     .par *{
         border: 2px solid black;
         border-radius: 5px;
+        text-align: center;
     }
     .par::after{
         content: "its realy nice meating you";
@@ -36,7 +37,9 @@
         content: "its realy nice meating you";
         color: rgb(175, 92, 92);
         font-style: italic;
-        /* text-align: center; */
+
+        /* text-align: center;   It will not work this content is generted by css which not allow to use these inline properties directly ,instead of these we can control its positioning by position ,transform etc.*/ 
+        
         margin: 50vw;
         ::selection{
             color: blanchedalmond;
