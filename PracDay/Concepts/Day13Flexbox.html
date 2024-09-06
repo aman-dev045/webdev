@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box </title>
+</head>
+<style>
+    .container {
+        border: 2px solid brown;
+        display: flex;
+        height: 50vh;
+        justify-content: center;
+        /* justify-content: space-between; */
+
+        align-items: center;
+
+        /* flex-direction: column; */
+
+        /* flex-wrap: wrap; */
+        /* alternative of above two property */
+        /* flex-flow: row wrap-reverse; */
+        gap: 2px 3px;
+        /* first one indicates row and other one is coloum */
+
+
+    }
+
+    .item {
+        height: 25px;
+        width: 25px;
+        border: 2px solid black;
+
+    }
+
+    .order1 {
+        order: 1;
+        /* this will decide the order of the particular item. */
+
+        /* flex-grow: 2; */
+        /* flex-shrink: 2; */
+        align-self:  flex-start;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="item order1">1</div>
+        <div class="item">
+
+        </div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+
+</html>
