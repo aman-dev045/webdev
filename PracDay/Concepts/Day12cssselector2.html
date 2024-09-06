@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selector part 2</title>
+</head>
+<style>
+   .name:first-child{
+        background-color: aqua;
+        color: black;
+    }
+     .name:nth-last-child(1){
+        color: brown;
+        background-color: rgb(161, 131, 91);
+    }
+    .name:nth-last-child(2){
+        color: blueviolet;
+        background-color: bisque;
+    } 
+    .par{
+        border: 2px solid rebeccapurple;
+    }
+    .par *{
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+    .par::after{
+        content: "its realy nice meating you";
+        color: red;
+        font-style: italic;
+        margin: 50vw;
+    }
+    .par::before{
+        content: "its realy nice meating you";
+        color: rgb(175, 92, 92);
+        font-style: italic;
+        /* text-align: center; */
+        margin: 50vw;
+        ::selection{
+            color: blanchedalmond;
+            background-color: black;
+        }
+    }
+   ::selection{
+        color:rgb(201, 19, 50);
+        background-color: rgb(199, 206, 183);
+    }
+    input::placeholder{
+        color: #8e9076ca;
+        background-color: rgb(90, 150, 150);
+       
+    }
+</style>
+<body>
+    <div class="par">
+        <div class="name">I am aman purohit</div>
+        <div class="name">I am pursuing Btech</div>
+        <div class="name">Rashtriya raksha university</div>
+
+    </div>
+    <form action="">
+        <input type="text " placeholder="Enter your name">
+    </form>
+</body>
+
+</html>
